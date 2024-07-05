@@ -61,7 +61,7 @@ body {
   right: 10px;
 }
 
-@keyframes is-active {
+@keyframes whiteout {
   from {
     opacity: 0;
   }
@@ -71,11 +71,11 @@ body {
 }
 
 .white {
-  animation-name: is-active;
+  animation-name: whiteout;
   animation-duration: 3s;
 }
 
-button {
+.btn {
   color: #000;
   font-size: 48px;
   background-color: #fff;

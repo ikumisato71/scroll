@@ -14,7 +14,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const logo = document.getElementsByClassName("h1");
+const logo = document.getElementsByClassName("btn");
 document.addEventListener("click", () => {
   logo.classList.toggle("is-active");
 });
