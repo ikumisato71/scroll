@@ -14,8 +14,9 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const logo = document.getElementsByClassName("btn");
-document.addEventListener("click", () => {
+const logo = document.getElementById("btn");
+
+logo.addEventListener("click", () => {
   logo.classList.toggle("is-active");
 });
 

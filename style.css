@@ -75,7 +75,7 @@ body {
   animation-duration: 3s;
 }
 
-.btn {
+#btn {
   color: #000;
   font-size: 48px;
   background-color: #fff;
@@ -84,4 +84,7 @@ body {
 
 .is-active {
   color: rgb(108, 33, 116);
+  font-size: 48px;
+  background-color: #fff;
+  border: #fff;
 }
