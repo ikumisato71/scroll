@@ -89,12 +89,14 @@ body {
   color: rgb(108, 33, 116);
 }
 /* モーダル */
-.js-modal-button {
+.button {
   display: block;
   cursor: pointer;
   margin: 0;
 }
-
+.button img {
+  width: 50%;
+}
 /* グレー背景 */
 .layer {
   background: rgba(0, 0, 0, 0.2);
