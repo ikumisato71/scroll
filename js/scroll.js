@@ -23,3 +23,21 @@ logo.addEventListener("click", () => {
 // backBtn.addEventListener("click", () => {
 //   backBtn.classList.toggle("is-active");
 // });
+
+// layer要素に付与したjs-modalクラスを取得し変数に格納
+const modal = document.querySelector(".js-modal");
+// button要素に付与したjs-modal-buttonクラスを取得し、変数に格納
+const modalButton = document.querySelector(".js-modal-button");
+
+// 追記 閉じる 取得
+const modalClose = document.querySelector("js-close-button");
+
+// モーダルボタンをクリックしたときのイベントを登録
+modalButton.addEventListener("click", () => {
+  modal.classList.add("is-open");
+});
+
+// 追記　閉じる　イベント登録
+modalClose.addEventListener("click", () => {
+  modal.classList.remove("is-open");
+});
