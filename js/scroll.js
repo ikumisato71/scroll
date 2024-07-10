@@ -30,7 +30,7 @@ const modal = document.querySelector(".js-modal");
 const modalButton = document.querySelector(".js-modal-button");
 
 // 追記 閉じる 取得
-const modalClose = document.querySelector("js-close-button");
+const modalClose = document.querySelector(".js-close-button");
 
 // モーダルボタンをクリックしたときのイベントを登録
 modalButton.addEventListener("click", () => {

@@ -27,7 +27,7 @@ body {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: 100px 0;
+  margin: 200px 0;
   gap: 20px;
 }
 
@@ -93,9 +93,12 @@ body {
   display: block;
   cursor: pointer;
   margin: 0;
+  background-color: #fff;
+  border: #fff;
+  /* background-image: url(images/modal.gif); */
 }
 .button img {
-  width: 50%;
+  width: 100px;
 }
 /* グレー背景 */
 .layer {
@@ -203,7 +206,7 @@ body {
   visibility: visible;
 }
 
-.layer.is-open.modal {
+.layer.is-open .modal {
   opacity: 1;
   visibility: visible;
 }
