@@ -82,19 +82,19 @@ body {
 #btn {
   font-size: 48px;
   background-color: #fff;
-  border: #fff;
+  border: none;
 }
 
 .is-active {
   color: rgb(108, 33, 116);
 }
-/* モーダル */
+/* モーダル ボタン*/
 .button {
   display: block;
   cursor: pointer;
   margin: 0;
   background-color: #fff;
-  border: #fff;
+  border: none;
   /* background-image: url(images/modal.gif); */
 }
 .button img {
@@ -108,6 +108,12 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  /* 追記 */
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  /* 追記　ふわっと */
+  transition: opacity 1s linear, visibility 1s linear, z-index 1s linear;
 }
 /* モーダルコンテンツ */
 .modal {
@@ -116,6 +122,11 @@ body {
   margin-left: auto;
   width: 80%;
   min-width: 440px;
+  /* 追記 */
+  opacity: 0;
+  visibility: hidden;
+  /* 追記　ふわっと */
+  transition: visibility.7s linear, opacity 0.7s linear;
 }
 .modal__inner {
   margin-top: 125px;
@@ -128,7 +139,7 @@ body {
   /* モーダルの角を丸める */
   border-radius: 13px;
   display: block;
-  padding: 21px 8px 21px;
+  padding: 21px 8px;
   height: auto;
 }
 
@@ -170,34 +181,6 @@ body {
 }
 .close-button span:nth-child(2) {
   transform: rotate(-45deg) translate(1px, -1px);
-}
-
-.layer {
-  background: rgba(0, 0, 0, 0.2);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  /* 追記 */
-  z-index: -1;
-  opacity: 0;
-  visibility: hidden;
-  /* 追記　ふわっと */
-  transition: opacity 1s linear, visibility 1s linear, z-index 1s linear;
-}
-
-.modal {
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  width: 80%;
-  min-width: 440px;
-  /* 追記 */
-  opacity: 0;
-  visibility: hidden;
-  /* 追記　ふわっと */
-  transition: visibility.7s linear, opacity 0.7s linear;
 }
 
 .layer.is-open {
