@@ -8,6 +8,7 @@ window.addEventListener("scroll", () => {
   const scrollValue = document.scrollingElement.scrollTop;
   // 画面のスクロール量が300px以上であれば、『TOPに戻る』ボタンを表示
   if (scrollValue >= 300) {
+    console.log(scrollValue);
     backBtn.style.display = "inline";
   } else {
     backBtn.style.display = "none";
