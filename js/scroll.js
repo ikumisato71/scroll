@@ -42,3 +42,10 @@ modalButton.addEventListener("click", () => {
 modalClose.addEventListener("click", () => {
   modal.classList.remove("is-open");
 });
+// モーダルの背景をクリックしたときにモーダルを閉じるイベントを登録
+modal.addEventListener("click", (event) => {
+  // クリックされた要素がモーダルの内容部分ではない場合にモーダルを閉じる
+  if (event.target === modal) {
+    modal.classList.remove("is-open");
+  }
+});
